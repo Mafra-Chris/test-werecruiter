@@ -32,7 +32,7 @@ export class DataGrid {
         dataField: "FullName",
         setCellValue: async function (newData, value) {
           let capitalized = capitalizeFirstLetter(value)
-          console.log(capitalized)
+
           newData.FullName = capitalized;
 
         },
@@ -51,7 +51,7 @@ export class DataGrid {
         editorOptions: { useMaskBehavior: true, mask: "#####-###" },
         validationRules: [{ type: 'required' }],
         setCellValue: async function (newData, value) {
-
+          newData.PostalCode = value
           let res = await getAddress(value)
           newData.Address = res.address;
           newData.City = res.city;
