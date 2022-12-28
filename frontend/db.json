@@ -1,0 +1,13 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "FullName": "Chris Mafra",
+      "BirthDate": "1999-11-17",
+      "Address": "Avenida José Bento Ribeiro Dantas",
+      "City": "Armação dos Búzios",
+      "PostalCode": "28140-123",
+      "Phone": "(22) 99278-8544"
+    }
+  ]
+}
